@@ -200,7 +200,7 @@ I would like to express my gratitude to the following individuals and organizati
 
 [Lilly Rum:](https://unsplash.com/@rumandraisin) For her images that is being used in the hero background.
 
-[Freepik.com](https://www.freepik.com) This website has been designed using image assets from Freepik.com
+[Freepik.com](https://www.freepik.com) This website has been designed using image assets from Freepik.com.
 
 
 If I have unintentionally missed anyone who deserves acknowledgment, please let me know, and I will gladly include them.
