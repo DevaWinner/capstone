@@ -2,14 +2,16 @@
 function toggleMenu() {
   const menuIcon = document.querySelector('.nav-icon');
   const menu = document.querySelector('.nav-links-container');
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
   menuIcon.classList.toggle('open');
-  menu.classList.toggle('open');
 
-  if (menuIcon.classList.contains('open')) {
+  if (menuIcon.classList.contains('open') && screenWidth <= 768) {
+    menu.classList.add('open');
     menuIcon.innerHTML = '<i class="fa fa-times fa-2xl"></i>';
   } else {
     menuIcon.innerHTML = '<i class="fa fa-bars fa-2xl"></i>';
+    menu.classList.remove('open');
   }
 }
 
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 
 // ====== Storing dynamic content of Instructors section in variables ===========
 const featuredInstructors = [

@@ -486,6 +486,21 @@ footer {
   .nav-links-container {
     display: flex;
   }
+
+  .nav-links-container.open {
+    position:initial;
+    display: block;
+    flex-direction: column;
+    left: none;
+    right: none;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    background-color: transparent;
+    border-radius: none;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    z-index: 0;
+  }
   
   .nav-links-container ul {
     display: flex;
