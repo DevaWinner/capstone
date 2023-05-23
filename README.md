@@ -3,7 +3,7 @@
 <div align="center">
   <img src="./assets/logo1.png" alt="logo" width="140"  height="auto" />
   <br/>
-  <h3><b>Photography School</b></h3>
+  <h3><b>Pixel's Photography School</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [My_Portfolio] <a name="about-project"></a>
+# 📖 [Pixel's Photography School] <a name="about-project"></a>
 
-Welcome to the **Photography School** Website repository! This project is an interactive website designed for a photography school, aimed at providing aspiring photographers with a comprehensive platform to learn, explore, and enhance their photography skills.
+Welcome to the **Pixel's Photography School** Website repository! This project is an interactive website designed for a photography school, aimed at providing aspiring photographers with a comprehensive platform to learn, explore, and enhance their photography skills.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -102,7 +102,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:DevaWinner/photography-project.git
+  git clone git@github.com:DevaWinner/capstone.git
 ```
 ## Install
 
