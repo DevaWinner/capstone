@@ -461,47 +461,31 @@ footer {
 /* ========== Desktop Version ========== */
 
 @media only screen and (min-width: 768px) {
-  
   /* =========== Navigation ============== */
 
   header {
     padding: 0 90px;
   }
-  
+
   nav {
     margin-right: 0;
   }
-  
+
   .logo,
   .nav-links a {
     color: var(--main);
     font-size: 18px;
     font-weight: 400;
   }
-  
+
   .nav-icon {
     display: none;
   }
-  
+
   .nav-links-container {
     display: flex;
   }
 
-  .nav-links-container.open {
-    position:initial;
-    display: block;
-    flex-direction: column;
-    left: none;
-    right: none;
-    top: 0;
-    bottom: 0;
-    height: auto;
-    background-color: transparent;
-    border-radius: none;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    z-index: 0;
-  }
-  
   .nav-links-container ul {
     display: flex;
     list-style-type: none;
@@ -524,17 +508,17 @@ footer {
     padding: 150px 120px;
     gap: 1em;
   }
-  
+
   .heroText h1 {
     font-weight: 500;
     font-size: 32px;
   }
-  
+
   .heroText p {
     font-size: 5rem;
     margin-bottom: 20px;
   }
-  
+
   .heroText p br {
     display: inline-block;
   }
@@ -543,111 +527,108 @@ footer {
     justify-content: flex-start;
     max-width: max-content;
   }
-  
+
   .dateLocation {
     margin-top: 1em;
   }
-  
+
   .dateLocation h1 {
     font-size: 2.5rem;
   }
-  
+
   .dateLocation p {
     font-size: 1.5rem;
   }
 
+  /* ============ Programs Section ================ */
 
-/* ============ Programs Section ================ */
+  .programContainer {
+    padding: 40px 120px;
+    gap: 3em;
+  }
 
-.programContainer {
-  padding: 40px 120px;
-  gap: 3em;
-}
+  .cardGrid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+  }
 
-.cardGrid {
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
-}
+  .card {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
 
-.card {
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-}
+  .card-heading {
+    text-align: center;
+  }
 
-.card-heading {
-  text-align: center;
-}
+  .card-description {
+    text-align: center;
+    justify-self: flex-end;
+    font-weight: 600;
+  }
 
-.card-description {
-  text-align: center;
-  justify-self: flex-end;
-  font-weight: 600;
-}
+  #programButton {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
-#programButton {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  font-weight: 400;
-  font-size: 24px;
-  text-decoration: underline;
-  cursor: pointer;
-}
+  /* =============== Featured Instructors ==================== */
 
+  .featuredContainer {
+    padding: 60px 160px;
+    margin-bottom: 2em;
+  }
 
-/* =============== Featured Instructors ==================== */
+  .instructorContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px 40px;
+  }
 
-.featuredContainer {
-  padding: 60px 160px;
-  margin-bottom: 2em;
-}
+  .instructor-photo {
+    position: relative;
+    width: 30%;
+  }
 
-.instructorContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 50px 40px;
-}
+  .cardInstructor:not(.card1):not(.card2) {
+    display: flex;
+  }
 
-.instructor-photo {
-  position: relative;
-  width: 30%;
-}
+  .seeMore {
+    display: none;
+  }
 
-.cardInstructor:not(.card1):not(.card2) {
-  display: flex;
-}
+  /* ============== Footer ==================== */
 
-.seeMore {
-  display: none;
-}
+  footer {
+    padding: 10px 0;
+  }
 
-/* ============== Footer ==================== */
+  .footerLogo {
+    width: max-content;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
-footer {
-  padding: 10px 0;
-}
+  .footerLogo img {
+    width: 160px;
+  }
 
-.footerLogo {
-  width: max-content;
-  margin-left: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.footerLogo img {
-  width: 160px;
-}
-
-.footerLogo p {
-  font-size: 16px;
-  font-weight: 600;
-}
-
+  .footerLogo p {
+    font-size: 16px;
+    font-weight: 600;
+  }
 }

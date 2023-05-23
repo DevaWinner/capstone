@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
 // ====== Storing dynamic content of Instructors section in variables ===========
 const featuredInstructors = [
   {
