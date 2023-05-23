@@ -118,7 +118,6 @@ const targetElement = document.querySelector('#instructors');
 targetElement.appendChild(cardContainer);
 
 const seeMoreBtn = document.getElementById('see-more-btn');
-seeMoreBtn.addEventListener('click', toggleHiddenCards);
 
 function toggleHiddenCards() {
   const hiddenCards = document.querySelectorAll('.cardInstructor:not(.card1):not(.card2)');
@@ -133,3 +132,5 @@ function toggleHiddenCards() {
     }
   });
 }
+
+seeMoreBtn.addEventListener('click', toggleHiddenCards);
