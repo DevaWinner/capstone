@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Lato:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* declare color variables */
+:root {
+  --main: #272a31;
+  --secondary: #d3d3d3;
+  --accent: #ec5242;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
