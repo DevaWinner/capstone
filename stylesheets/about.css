@@ -238,12 +238,12 @@ button:hover {
 .graduatesContainer {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
+  gap: 2em;
 }
 
 .graduatesCard {
-  background-image: url("your-image-url.jpg");
   background-size: cover;
   position: relative;
   height: 200px;
@@ -252,25 +252,36 @@ button:hover {
   justify-content: center;
 }
 
+.card1 {
+  background-image: url("../assets/graduate1.jpg");
+}
+
+.card2 {
+  background-image: url("../assets/graduate1.jpg");
+}
 .graduatesContent {
-  background-color: rgba(255, 0, 0, 0.8);
-  padding: 20px;
+  background-color: rgba(161, 51, 32, 0.808);
+  padding: 50px 20px;
   text-align: center;
   color: #fff;
+  height: 100%;
+  width: 100%;
 }
 
 .graduatesContent h1 {
-  font-size: 24px;
+  font-size: 1.8rem;
+  font-weight: 800;
   margin: 0;
 }
 
 .graduatesContent p {
   font-size: 16px;
   margin: 10px 0 0;
+  font-weight: 600;
 }
 
-
 /* ============ Sponsor Section ================= */
+
 .sponsorContainer {
   padding: 40px 10px;
   display: flex;
