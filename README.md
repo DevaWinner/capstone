@@ -82,7 +82,7 @@ Welcome to the **Pixel's Photography School** Website repository! This project i
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live View](https://devawinner.github.io/photography-project/) 
+- [Live View](https://devawinner.github.io/capstone/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
