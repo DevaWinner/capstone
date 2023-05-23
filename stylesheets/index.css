@@ -52,8 +52,8 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: var(--accent);
-  font-size: 24px;
-  font-weight: 550;
+  font-size: 22px;
+  font-weight: 508;
 }
 
 .nav-icon {
@@ -91,8 +91,7 @@ nav {
 .nav-links-container.open ul li {
   padding: 10px;
   color: rgba(58, 74, 66, 1);
-  font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   border-bottom: 2px solid rgba(224, 218, 218, 0.829);
 }
 
@@ -110,12 +109,13 @@ button:hover {
 #campaign a button {
   color: var(--accent);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   padding: 10px 20px;
-  border: 4px solid var(--accent);
+  border: 3px solid var(--accent);
   background-color: #fff;
   margin-top: 1em;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /* ============== Hero Section ============= */
@@ -146,16 +146,20 @@ button:hover {
 }
 
 .heroText h1 {
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .heroText p {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 900;
-  margin-bottom: 20px;
   background: url('../assets/heroFill.jpeg') center/cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.heroText p br {
+  display: none;
 }
 
 .heroIntro {
@@ -169,8 +173,8 @@ button:hover {
 }
 
 .heroIntro p {
-  font-size: 19px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .dateLocation {
@@ -179,16 +183,15 @@ button:hover {
 
 .dateLocation h1 {
   font-family: 'Braah One', sans-serif;
-  font-size: 25px;
 }
 
 .dateLocation p {
   font-weight: 600;
-  font-size: 19px;
   text-align: justify;
 }
 
 /* ============ Programs Section ================ */
+
 .programContainer {
   position: relative;
   padding: 40px 10px;
@@ -323,7 +326,7 @@ button:hover {
   left: 0;
   width: 50%;
   height: 50%;
-  background-image: url('./assets/mosaic.jpg');
+  background-image: url('../assets/mosaic.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -388,6 +391,7 @@ button:hover {
 }
 
 /* ============ Sponsor Section ================= */
+
 .sponsorContainer {
   padding: 40px 10px;
   display: flex;
@@ -441,10 +445,190 @@ footer {
 }
 
 .footerLogo {
-  width: 35%;
-  margin-left: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footerLogo img {
+.footerLogo a {
+  width: 40%;
+}
+
+.footerLogo a img {
   width: 100%;
+}
+
+/* ========== Desktop Version ========== */
+
+@media only screen and (min-width: 768px) {
+  /* =========== Navigation ============== */
+
+  header {
+    padding: 0 90px;
+  }
+
+  nav {
+    margin-right: 0;
+  }
+
+  .logo,
+  .nav-links a {
+    color: var(--main);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-links-container {
+    display: flex;
+  }
+
+  .nav-links-container ul {
+    display: flex;
+    list-style-type: none;
+    gap: 3.5em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #campaign a button {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border: 3px solid var(--accent);
+    margin-top: 0;
+  }
+
+  /* ============== Hero Section ================== */
+
+  .heroContainer {
+    padding: 150px 120px;
+    gap: 1em;
+  }
+
+  .heroText h1 {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  .heroText p {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  .heroText p br {
+    display: inline-block;
+  }
+
+  .heroIntro {
+    justify-content: flex-start;
+    max-width: max-content;
+  }
+
+  .dateLocation {
+    margin-top: 1em;
+  }
+
+  .dateLocation h1 {
+    font-size: 2.5rem;
+  }
+
+  .dateLocation p {
+    font-size: 1.5rem;
+  }
+
+  /* ============ Programs Section ================ */
+
+  .programContainer {
+    padding: 40px 120px;
+    gap: 3em;
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+  }
+
+  .card {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .card-heading {
+    text-align: center;
+  }
+
+  .card-description {
+    text-align: center;
+    justify-self: flex-end;
+    font-weight: 600;
+  }
+
+  #programButton {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /* =============== Featured Instructors ==================== */
+
+  .featuredContainer {
+    padding: 60px 160px;
+    margin-bottom: 2em;
+  }
+
+  .instructorContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px 40px;
+  }
+
+  .instructor-photo {
+    position: relative;
+    width: 30%;
+  }
+
+  .cardInstructor:not(.card1):not(.card2) {
+    display: flex;
+  }
+
+  .seeMore {
+    display: none;
+  }
+
+  /* ============== Footer ==================== */
+
+  footer {
+    padding: 10px 0;
+  }
+
+  .footerLogo {
+    width: max-content;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footerLogo img {
+    width: 160px;
+  }
+
+  .footerLogo p {
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
