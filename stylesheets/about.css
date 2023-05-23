@@ -126,7 +126,7 @@ button:hover {
   padding: 80px 20px;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
   margin-top: 2em;
 }
 
@@ -146,6 +146,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .heroText h1 {
@@ -153,12 +154,13 @@ button:hover {
 }
 
 .heroText p {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;
   margin-bottom: 20px;
   background: url('../assets/heroFill.jpeg') center/cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  text-align: center;
 }
 
 .heroIntro {
@@ -174,7 +176,99 @@ button:hover {
 .heroIntro p {
   font-size: 19px;
   line-height: 30px;
+  text-align: justify;
 }
+
+.contactEmail {
+  font-size: 16px;
+  text-align: center;
+  color: var(--main);
+  line-height: 1.6;
+}
+
+.contactEmail a {
+  color: var(--main);
+  font-weight: 600;
+}
+
+/* ============== About School Section =============== */
+
+.schoolInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 40px 30px;
+  border-bottom: 1px solid rgba(165, 160, 160, 0.493);
+}
+
+.schoolDetails h1 {
+  color: var(--main);
+  text-align: center;
+}
+
+.schoolDetails hr {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  border: none;
+  margin: 20px auto 10px auto;
+}
+
+.schoolDetails p {
+  color: var(--main);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.aboutSchool {
+  border: 1px solid rgba(165, 160, 160, 0.493);
+  padding: 20px 10px;
+}
+
+.aboutSchool p {
+  color: var(--main);
+  text-align: justify;
+  line-height: 1.2;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ============== Graduates Section =============== */
+
+.graduatesContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.graduatesCard {
+  background-image: url("your-image-url.jpg");
+  background-size: cover;
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.graduatesContent {
+  background-color: rgba(255, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.graduatesContent h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.graduatesContent p {
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
 
 /* ============ Sponsor Section ================= */
 .sponsorContainer {
@@ -223,6 +317,9 @@ button:hover {
 
 footer {
   padding: 40px 0;
+}
+
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
