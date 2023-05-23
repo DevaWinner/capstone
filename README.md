@@ -1,7 +1,7 @@
 <a name="Photography School"></a>
 
 <div align="center">
-  <img src="./assets/logo.svg" alt="logo" width="140"  height="auto" />
+  <img src="./assets/logo1.png" alt="logo" width="140"  height="auto" />
   <br/>
   <h3><b>Photography School</b></h3>
 </div>
