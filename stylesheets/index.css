@@ -103,7 +103,11 @@ nav {
   align-items: center;
 }
 
-#campaign a button{
+button:hover {
+  background-color: rgb(226, 220, 220);
+}
+
+#campaign a button {
   color: var(--accent);
   font-size: 20px;
   font-weight: 500;
@@ -114,21 +118,17 @@ nav {
   border-radius: 5px;
 }
 
-button:hover {
-  background-color: rgb(226, 220, 220); /* lighter */
-}
-
 /* ============== Hero Section ============= */
 
 .heroContainer {
-  background: url(./assets/hero.jpg) no-repeat center center/cover;
+  background: url(../assets/hero.jpg) no-repeat center center/cover;
   position: relative;
   padding: 80px 20px;
   display: flex;
   flex-direction: column;
   gap: 2em;
   margin-top: 2em;
-} 
+}
 
 .overlay {
   position: absolute;
@@ -136,7 +136,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fffffff5;
+  background-color: #faf5f5e1;
 }
 
 .heroContent {
@@ -153,10 +153,9 @@ button:hover {
   font-size: 3.5rem;
   font-weight: 900;
   margin-bottom: 20px;
-  background: url('./assets/heroFill.jpeg') center/cover;
+  background: url('../assets/heroFill.jpeg') center/cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .heroIntro {
@@ -170,7 +169,7 @@ button:hover {
 }
 
 .heroIntro p {
-  font-size: 19px ;
+  font-size: 19px;
   line-height: 32px;
 }
 
@@ -231,7 +230,7 @@ button:hover {
 
 .card {
   background-color: #3c3f46dc;
-  padding: 20px 10px 20px 10px ;
+  padding: 20px 10px 20px 10px;
   display: flex;
   gap: 10px;
   color: var(--accent);
@@ -362,7 +361,7 @@ button:hover {
 }
 
 .cardInstructor:not(.card1):not(.card2) {
-  display: none; /
+  display: none;
 }
 
 .seeMore {
