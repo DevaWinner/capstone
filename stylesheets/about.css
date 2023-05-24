@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Lato:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* declare color variables */
+:root {
+  --main: #272a31;
+  --secondary: #d3d3d3;
+  --accent: #ec5242;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========== Navigation ============== */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topHeader {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logo {
+  max-width: 90px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+.logo,
+.nav-links a {
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 508;
+}
+
+.nav-icon {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.nav-links-container {
+  display: none;
+}
+
+.nav-links-container.open {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 40px;
+  height: 55vh;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  z-index: 3;
+}
+
+.nav-links-container.open ul {
+  list-style-type: none;
+  margin: 8px 25px;
+}
+
+.nav-links-container.open ul li {
+  padding: 20px;
+  color: rgba(58, 74, 66, 1);
+  font-weight: 500;
+  border-bottom: 2px solid rgba(224, 218, 218, 0.829);
+}
+
+#campaign {
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: rgb(226, 220, 220);
+}
+
+#campaign a button {
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: 3px solid var(--accent);
+  background-color: #fff;
+  margin-top: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ============== Hero Section ============= */
+
+.heroContainer {
+  background: url(../assets/hero.jpg) no-repeat center center/cover;
+  position: relative;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  margin-top: 2em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #faf5f5e1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  color: var(--accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroText h1 {
+  font-weight: 500;
+}
+
+.heroText p {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background: url('../assets/heroFill.jpeg') center/cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+.heroIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  background-color: #ffffffd3;
+  color: var(--main);
+  padding: 20px;
+}
+
+.heroIntro p {
+  font-size: 19px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.contactEmail {
+  font-size: 16px;
+  text-align: center;
+  color: var(--main);
+  line-height: 1.6;
+}
+
+.contactEmail a {
+  color: var(--main);
+  font-weight: 600;
+}
+
+/* ============== About School Section =============== */
+
+.schoolInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding: 40px 30px;
+  border-bottom: 1px solid rgba(165, 160, 160, 0.493);
+}
+
+.schoolDetails h1 {
+  color: var(--main);
+  text-align: center;
+}
+
+.schoolDetails hr {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  border: none;
+  margin: 20px auto 10px auto;
+}
+
+.schoolDetails p {
+  color: var(--main);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.aboutSchool {
+  border: 1px solid rgba(165, 160, 160, 0.493);
+  padding: 20px 10px;
+}
+
+.aboutSchool p {
+  color: var(--main);
+  text-align: justify;
+  line-height: 1.2;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ============== Graduates Section =============== */
+
+.graduatesContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 2em;
+}
+
+.graduatesCard {
+  background-size: cover;
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card1 {
+  background-image: url("../assets/graduate1.jpg");
+}
+
+.card2 {
+  background-image: url("../assets/graduate1.jpg");
+}
+
+.graduatesContent {
+  background-color: rgba(161, 51, 32, 0.808);
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.graduatesContent h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.graduatesContent p {
+  font-size: 16px;
+  margin: 10px 0 0;
+  font-weight: 600;
+}
+
+/* ============ Sponsor Section ================= */
+
+.sponsorContainer {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  background-color: var(--main);
+}
+
+.sponsorHeading h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.sponsorHeading hr {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  border: none;
+  margin: 20px auto 10px auto;
+}
+
+.sponsorGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsorCard {
+  color: #fff;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.sponsorCard p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ============== Footer ==================== */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main);
+}
+
+.footerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLogo a {
+  width: 40%;
+}
+
+.footerLogo a img {
+  width: 100%;
+}
+
+/* ========== Desktop Version ========== */
+
+@media only screen and (min-width: 768px) {
+  /* =========== Navigation ============== */
+
+  .topHeader {
+    display: flex;
+    justify-content: flex-end;
+    height: 45px;
+    align-items: center;
+    background-color: var(--main);
+    padding: 0 100px;
+  }
+
+  .topHeader ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+    color: #fff;
+  }
+
+  .header {
+    padding: 0 90px;
+    height: 70px;
+  }
+
+  nav {
+    margin-right: 0;
+  }
+
+  .logo,
+  .nav-links a {
+    color: var(--main);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-links-container {
+    display: flex;
+  }
+
+  .nav-links-container ul {
+    display: flex;
+    list-style-type: none;
+    gap: 3.5em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #campaign a button {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border: 3px solid var(--accent);
+    margin-top: 0;
+  }
+
+  /* ============== Hero Section ================== */
+
+  .heroContainer {
+    padding: 150px 120px;
+    gap: 1em;
+  }
+
+  .heroText h1 {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  .heroText p {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  .heroIntro {
+    justify-content: flex-start;
+    max-width: 65%;
+    margin: auto;
+  }
+
+  .dateLocation {
+    margin-top: 1em;
+  }
+
+  .dateLocation h1 {
+    font-size: 2.5rem;
+  }
+
+  .dateLocation p {
+    font-size: 1.5rem;
+  }
+
+  /* ============== About School Section =============== */
+
+  .schoolInfo {
+    padding: 40px 20%;
+  }
+
+  .schoolDetails br {
+    display: none;
+  }
+
+  .schoolDetails p {
+    max-width: 70%;
+    margin: auto;
+  }
+
+  .aboutSchool {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  #about-description {
+    font-size: 20px;
+  }
+
+  /* ============== Graduates Section =============== */
+
+  .graduatesContainer {
+    flex-direction: row;
+  }
+
+  /* ============== Footer ==================== */
+
+  .footerLogo {
+    width: max-content;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footerLogo img {
+    width: 160px;
+  }
+
+  .footerLogo p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

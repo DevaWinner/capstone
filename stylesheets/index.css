@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Lato:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* declare color variables */
+:root {
+  --main: #272a31;
+  --secondary: #d3d3d3;
+  --accent: #ec5242;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========== Navigation ============== */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topHeader {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+}
+
+.logo {
+  max-width: 90px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+.logo,
+.nav-links a {
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 508;
+}
+
+.nav-icon {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.nav-links-container {
+  display: none;
+}
+
+.nav-links-container.open {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 40px;
+  height: 55vh;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  z-index: 3;
+}
+
+.nav-links-container.open ul {
+  list-style-type: none;
+  margin: 8px 25px;
+}
+
+.nav-links-container.open ul li {
+  padding: 20px;
+  color: rgba(58, 74, 66, 1);
+  font-weight: 500;
+  border-bottom: 2px solid rgba(224, 218, 218, 0.829);
+}
+
+#campaign {
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: rgb(226, 220, 220);
+}
+
+#campaign a button {
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: 3px solid var(--accent);
+  background-color: #fff;
+  margin-top: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ============== Hero Section ============= */
+
+.heroContainer {
+  background: url(../assets/hero.jpg) no-repeat center center/cover;
+  position: relative;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #faf5f5e1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  color: var(--accent);
+}
+
+.heroText h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.heroText p {
+  font-size: 3rem;
+  font-weight: 900;
+  background: url('../assets/heroFill.jpeg') center/cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.heroText p br {
+  display: none;
+}
+
+.heroIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  background-color: #ffffffd3;
+  color: var(--main);
+  padding: 20px;
+}
+
+.heroIntro p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.dateLocation {
+  color: rgb(97, 89, 89);
+}
+
+.dateLocation h1 {
+  font-family: 'Braah One', sans-serif;
+}
+
+.dateLocation p {
+  font-weight: 600;
+  text-align: justify;
+}
+
+/* ============ Programs Section ================ */
+
+.programContainer {
+  position: relative;
+  padding: 40px 10px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjNDAzYzNmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxZTI5MmQiPjwvcGF0aD4KPC9zdmc+");
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.programOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.151);
+}
+
+.programContainer h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.programContainer hr {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  border: none;
+  margin: 20px auto 10px auto;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  background-color: #3c3f46dc;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  gap: 10px;
+  color: var(--accent);
+  z-index: 3;
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-icon i {
+  font-size: 32px;
+  color: #fff;
+}
+
+.card-heading {
+  font-weight: bold;
+  text-align: justify;
+}
+
+.card-description {
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 600;
+}
+
+#programButton {
+  display: block;
+  margin: auto;
+  padding: 15px 15px;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* =============== Featured Instructors ==================== */
+
+.featuredContainer {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.featuredHeading h1 {
+  color: var(--main);
+  text-align: center;
+}
+
+.featuredHeading hr {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  border: none;
+  margin: 20px auto 10px auto;
+}
+
+.instructorContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.cardInstructor {
+  display: flex;
+  gap: 1.5em;
+}
+
+.instructor-photo {
+  position: relative;
+  width: 40%;
+}
+
+.instructor-photo img {
+  width: 100%;
+  height: 110px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.instructor-photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-image: url('../assets/mosaic1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.instructor-details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.instructor-name {
+  font-size: 24px;
+  color: var(--main);
+}
+
+.instructor-position {
+  font-size: 16px;
+  color: var(--accent);
+  font-weight: 550;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.904);
+  margin: 5px 0;
+  width: 23px;
+}
+
+.instructor-description {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cardInstructor:not(.card1):not(.card2) {
+  display: none;
+}
+
+.seeMore {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin: auto;
+  padding: 18px 130px;
+  border: 2px solid rgba(190, 184, 184, 0.938);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.seeMore a {
+  color: var(--main);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.seeMore i {
+  color: var(--accent);
+  font-size: 18px;
+}
+
+/* ============ Sponsor Section ================= */
+
+.sponsorContainer {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  background-color: var(--main);
+}
+
+.sponsorHeading h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.sponsorHeading hr {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  border: none;
+  margin: 20px auto 10px auto;
+}
+
+.sponsorGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsorCard {
+  color: #fff;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.sponsorCard p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ============== Footer ==================== */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main);
+}
+
+.footerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLogo a {
+  width: 40%;
+}
+
+.footerLogo a img {
+  width: 100%;
+}
+
+/* ========== Desktop Version ========== */
+
+@media only screen and (min-width: 768px) {
+  /* =========== Navigation ============== */
+
+  .topHeader {
+    display: flex;
+    justify-content: flex-end;
+    height: 45px;
+    align-items: center;
+    background-color: var(--main);
+    padding: 0 100px;
+  }
+
+  .topHeader ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+    color: #fff;
+  }
+
+  .header {
+    padding: 0 90px;
+    height: 70px;
+  }
+
+  nav {
+    margin-right: 0;
+  }
+
+  .logo,
+  .nav-links a {
+    color: var(--main);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-links-container {
+    display: flex;
+  }
+
+  .nav-links-container ul {
+    display: flex;
+    list-style-type: none;
+    gap: 3.5em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #campaign a button {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border: 3px solid var(--accent);
+    margin-top: 0;
+  }
+
+  /* ============== Hero Section ================== */
+
+  .heroContainer {
+    padding: 150px 120px;
+    gap: 1em;
+  }
+
+  .heroText h1 {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  .heroText p {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
+  .heroText p br {
+    display: inline-block;
+  }
+
+  .heroIntro {
+    justify-content: flex-start;
+    max-width: max-content;
+  }
+
+  .dateLocation {
+    margin-top: 1em;
+  }
+
+  .dateLocation h1 {
+    font-size: 2.5rem;
+  }
+
+  .dateLocation p {
+    font-size: 1.5rem;
+  }
+
+  /* ============ Programs Section ================ */
+
+  .programContainer {
+    padding: 40px 80px;
+    gap: 3em;
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+  }
+
+  .card {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .card:hover {
+    border: 2px solid #fff;
+  }
+
+  .card-heading {
+    text-align: center;
+  }
+
+  .card-description {
+    text-align: center;
+    justify-self: flex-end;
+    font-weight: 600;
+  }
+
+  #programButton {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /* =============== Featured Instructors ==================== */
+
+  .featuredContainer {
+    padding: 60px 160px;
+    margin-bottom: 2em;
+  }
+
+  .instructorContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px 40px;
+  }
+
+  .instructor-photo {
+    position: relative;
+    width: 30%;
+  }
+
+  .cardInstructor:not(.card1):not(.card2) {
+    display: flex;
+  }
+
+  .seeMore {
+    display: none;
+  }
+
+  /* ============== Footer ==================== */
+
+  .footerLogo {
+    width: max-content;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footerLogo img {
+    width: 160px;
+  }
+
+  .footerLogo p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

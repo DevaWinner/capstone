@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel's Photography</title>
+
+  <link rel="stylesheet" href="./stylesheets/index.css">
+  <script src="https://kit.fontawesome.com/8d20eebc7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <section class="topHeader">
+      <ul>
+        <li><i class="fab fa-facebook-square fa-lg"></i></li>
+        <li><i class="fab fa-twitter-square fa-lg"></i></li>
+        <li><p class="headText">English</p></li>
+        <li><p class="headText">My Page</p></li>
+        <li><p class="headText">Logout</p></li>
+      </ul>
+    </section>
+
+    <section class="header">
+      <a href="./index.html" class="logo">
+        <img src="./assets/logo1.png" alt="logo">
+      </a>
+  
+      <!-- ============ Navigation ===================== -->
+      <nav>
+        <div class="nav-icon" onclick="toggleMenu()">
+          <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </div>
+  
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li class="hover"><a href="./about.html">About</a></li>
+            <li class="hover"><a href="#programs">Program</a></li>
+            <li class="hover"><a href="#featured">Instructors</a></li>
+            <li class="hover"><a href="#sponsor">Sponsor</a></li>
+            <li class="hover"><a href="#">News</a></li>
+            <li class="hover" id="campaign"><a href="#contact"><button type="button">Photo Campaign</button></a></li>
+          </ul>
+        </div>
+  
+      </nav>
+    </section>
+    
+  </header>
+
+
+  <main>
+
+    <!-- ============= Hero Section ================ -->
+    <section class="heroContainer">
+      <div class="overlay"></div>
+      <div class="heroContent heroText">
+        <h1>"Capture your Creativity!"</h1>
+        <p>Unlock Your Photography <br> Potential!</p>
+      </div>
+
+      <div class="heroContent heroIntro">
+        <p>Unleash your creativity with us through photography. Capture moments. <br>Embark on a transformative journey.</p>
+      </div>
+
+      <div class="heroContent dateLocation gray">
+        <h1>2023.06.12 (THU) ~ 20 (FRI)</h1>
+        <p>@Photography Cafe, Accra Street, Abuja</p>
+      </div>
+      <div id="programs"></div>
+    </section>
+
+    <!-- ============= Program Section ================ -->
+   <section class="programContainer">
+      <div class="programOverlay"></div>
+      <div>
+        <h1>Main Program</h1>
+        <hr>
+      </div>
+      
+      <div class="cardGrid">
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <div class="card-icon">
+            <h3 class="card-heading">Photography Courses</h3>
+          </div>
+          <p class="card-description">Explore a wide range of photography courses tailored for beginners</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="card-icon">
+            <h3 class="card-heading">Certified Instructors</h3>
+          </div>
+          <p class="card-description">Learn from our team of experienced and certified instructors</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-image"></i>
+          </div>
+          <div class="card-icon">
+            <h3 class="card-heading">Inspiring Gallery</h3>
+          </div>
+          <p class="card-description">Immerse yourself in our captivating photo gallery</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="card-icon">
+            <h3 class="card-heading">Thriving Community</h3>
+          </div>
+          <p class="card-description">Join our vibrant photography community and connect</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="card-icon">
+            <h3 class="card-heading">Equipment</h3>
+          </div>
+          <p class="card-description">Discover essential recommendations and get expert advice </p>
+        </div>
+
+      </div>
+
+      <button id="programButton" type="button">Join Pixel's School 2023</button>
+      <div id="featured"></div>
+   </section>
+
+   <!-- =============== Featured Instructors ==================== -->
+
+   <section class="featuredContainer">
+    <div class="featuredHeading">
+      <h1>Featured Instructors</h1>
+      <hr>
+    </div> 
+    <div id="instructors"></div>
+
+    <button class="seeMore" id="see-more-btn" type="button">
+      <a href="#" class="seeMoreText">MORE</a>
+      <i class="fa fa-chevron-down"></i>
+    </button>
+ </section>
+
+ <!-- ========== Sponsor ================== -->
+
+    <section class="sponsorContainer" id="sponsor">
+      <div class="sponsorHeading">
+        <h1>Sponsor</h1>
+        <hr>
+      </div>  
+    <div class="sponsorGrid">
+      <div class="sponsorCard">
+        <i class="fa-solid fa-blog fa-xl"></i><p>Blog</p>
+      </div>
+      <div class="sponsorCard">
+        <i class="fa-brands fa-google fa-xl"></i><p>Google</p>
+      </div>
+      <div class="sponsorCard">
+        <i class="fa-brands fa-joomla fa-xl"></i><p>Joomla</p>
+      </div>
+      <div class="sponsorCard">
+        <i class="fa-brands fa-stumbleupon fa-xl"></i><p>Stumbleupon</p>
+      </div>
+      <div class="sponsorCard">
+        <i class="fa-brands fa-yahoo fa-xl"></i><p>Yahoo</p>
+      </div>
+    </div>
+    
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footerLogo"><a href="#"><img src="./assets/logo1.png" alt=""></a>
+      <p>2023 Pixel's Photography <br>All rights reserved</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
