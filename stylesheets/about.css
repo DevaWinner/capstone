@@ -24,16 +24,25 @@ html {
 /* =========== Navigation ============== */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topHeader {
+  display: none;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   height: 60px;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   align-items: center;
-  position: fixed;
   background-color: #fff;
-  z-index: 999;
-  top: 0;
 }
 
 .logo {
@@ -353,7 +362,25 @@ footer {
 @media only screen and (min-width: 768px) {
   /* =========== Navigation ============== */
 
-  header {
+  .topHeader {
+    display: flex;
+    justify-content: flex-end;
+    height: 45px;
+    align-items: center;
+    background-color: var(--main);
+    padding: 0 100px;
+  }
+  
+  .topHeader ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+    color: #fff;
+  }
+
+  .header {
     padding: 0 90px;
     height: 70px;
   }
