@@ -328,7 +328,6 @@ button:hover {
 /* ============== Footer ==================== */
 
 footer {
-  padding: 40px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,10 +459,6 @@ footer {
   }
 
   /* ============== Footer ==================== */
-
-  footer {
-    padding: 10px 0;
-  }
 
   .footerLogo {
     width: max-content;
