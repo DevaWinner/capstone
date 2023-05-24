@@ -370,7 +370,7 @@ footer {
     background-color: var(--main);
     padding: 0 100px;
   }
-  
+
   .topHeader ul {
     display: flex;
     justify-content: flex-end;
