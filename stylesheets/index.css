@@ -236,6 +236,7 @@ button:hover {
   display: flex;
   gap: 10px;
   color: var(--accent);
+  z-index: 3;
 }
 
 .card-icon {
@@ -543,7 +544,7 @@ footer {
   /* ============ Programs Section ================ */
 
   .programContainer {
-    padding: 40px 120px;
+    padding: 40px 80px;
     gap: 3em;
   }
 
@@ -559,6 +560,10 @@ footer {
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+  }
+
+  .card:hover {
+    border: 2px solid #fff;
   }
 
   .card-heading {
