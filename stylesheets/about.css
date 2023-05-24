@@ -26,7 +26,7 @@ html {
 header {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 50px;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   align-items: center;
@@ -37,7 +37,7 @@ header {
 }
 
 .logo {
-  max-width: 110px;
+  max-width: 100%;
 }
 
 .logo img {
