@@ -8,9 +8,9 @@ function toggleMenu() {
 
   if (menuIcon.classList.contains('open') && screenWidth <= 768) {
     menu.classList.add('open');
-    menuIcon.innerHTML = '<i class="fa fa-times fa-2xl"></i>';
+    menuIcon.innerHTML = '<i class="fa fa-times fa-lg"></i>';
   } else {
-    menuIcon.innerHTML = '<i class="fa fa-bars fa-2xl"></i>';
+    menuIcon.innerHTML = '<i class="fa fa-bars fa-lg"></i>';
     menu.classList.remove('open');
   }
 }

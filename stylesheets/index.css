@@ -26,7 +26,7 @@ html {
 header {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   align-items: center;
@@ -37,7 +37,7 @@ header {
 }
 
 .logo {
-  max-width: 110px;
+  max-width: 90px;
 }
 
 .logo img {
@@ -74,7 +74,7 @@ nav {
   flex-direction: column;
   left: 0;
   right: 0;
-  top: 65px;
+  top: 50px;
   bottom: 40px;
   height: 55vh;
   background-color: #fff;
@@ -89,7 +89,7 @@ nav {
 }
 
 .nav-links-container.open ul li {
-  padding: 10px;
+  padding: 20px;
   color: rgba(58, 74, 66, 1);
   font-weight: 500;
   border-bottom: 2px solid rgba(224, 218, 218, 0.829);
@@ -113,7 +113,7 @@ button:hover {
   padding: 10px 20px;
   border: 3px solid var(--accent);
   background-color: #fff;
-  margin-top: 1em;
+  margin-top: 0.5em;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -264,7 +264,7 @@ button:hover {
 #programButton {
   display: block;
   margin: auto;
-  padding: 30px 15px;
+  padding: 15px 15px;
   background-color: var(--accent);
   border: none;
   border-radius: 2px;
@@ -465,6 +465,7 @@ footer {
 
   header {
     padding: 0 90px;
+    height: 70px;
   }
 
   nav {
